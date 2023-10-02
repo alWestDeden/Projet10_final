@@ -1,17 +1,4 @@
-# 724 Events
+Nouveau repository car je me suis emmêlé avec les commits de l'ancien en essayant de mettre le site sur GitHub Pages. J'ai préfré en créer un nouveau avec le code débuggé, pour plus de clarté.
 
-## Description
-L'application est le site d'une agence evenementielle.
-## Pre-requis
-- NodeJS  >= v16.14.1
-
-## Installation
-- `yarn install`
-
-## Lancement de l'application
-- `yarn start`
-
-## Tests
-- `yarn test`
-
+L'ancien repository est consultable ici :
 https://alwestdeden.github.io/Projet10/
