@@ -34,7 +34,6 @@ const Slider = () => {
               <div className="SlideCard__description">
                 <h3>{event.title}</h3>
                 <p>{event.description}</p>
-                {/* decreased by 1 the month indexes in helpers/Date */}
                 <div>{getMonth(new Date(event.date))}</div>
               </div>
             </div>

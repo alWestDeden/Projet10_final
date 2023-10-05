@@ -27,18 +27,34 @@ describe("When Form is created", () => {
 
 });
 
+describe("When a page is created", () => {
+  it("a list a people is displayed", async () => {
+    render(<Home />)
+    await screen.findByText("Samira");
+    await screen.findByText("Jean-baptiste");
+  });
+});
 
 describe("When a page is created", () => {
-  it("a list of events is displayed", () => {
-    // to implement
-  })
-  it("a list a people is displayed", () => {
-    // to implement
-  })
-  it("a footer is displayed", () => {
-    // to implement
-  })
-  it("an event card, with the last event, is displayed", () => {
-    // to implement
+  it("a footer is displayed", async () => {
+    render(<Home />)
+    await screen.findByText("Notre derniére prestation");
+    await screen.findByText("Contactez-nous");
+  });
+});
+
+describe("When a page is created", () => {
+  it("an event card, with the last event, is displayed", async () => {
+    render(<Home />)
+    await screen.findByText("boom");
+  });
+});
+
+describe("When a page is created", () => {
+  it("a list of events is displayed", async () => {
+    render(<Home />)
+    // await screen.getByText("User&product MixUsers");
+    const cardImages = await screen.queryAllByTestId('card-image-testid')
+    expect(cardImages.length).toBeGreaterThanOrEqual(9)
   })
 });
